@@ -1,0 +1,18 @@
+/*selecteur css*/
+div {
+	/*propriété css : sa valeur;*/
+	background: #A2389C;
+	width: 500px;
+	margin: auto;
+	border: 1px solid black;
+}
+/*selecteur universel qui permet de cibler tous ls elements du dom*/
+* {
+	box-sizing: border-box;
+}
+
+p {
+	width: 200px;
+	background: #F3890B;
+	margin: 50px 0;
+}

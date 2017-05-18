@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>comportement des block et inline </title>
+		<meta name="description" content="description unique par page">
+		<link rel="stylesheet" href="./css/normalize.css">
+		<link rel="stylesheet" href="./css/02.css">
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			entete
+		</header>
+		<!-- /header -->
+
+		<!-- main -->
+		<main>
+			<p>Lorem <strong>ipsum</strong> <strong>ipsum</strong>dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium aliquid rem commodi, obcaecati ipsam, reiciendis ipsum perferendis eius, suscipit tempora repudiandae est nobis nihil et dignissimos molestias similique facilis blanditiis.</p>
+			<p>Lorem ipsum dolor sit amet.</p>
+			<h1>comportement des block </h1>
+
+			<ul>
+				<li>largeur par defaut du parent</li>
+				<li>par defaut prend hauteur de son contenu dans le flux</li>
+				<li>on peut mettre du width et du height en css</li>
+				<li>margin ok en top right bottom et left</li>
+				<li>padding ok en top right bottom et left </li>
+				<li>par defaut se positionnent les uns sous les autres dans le flux</li>
+			</ul>
+
+			<h1>comportement des inline</h1>
+
+			<ol>
+				<li>par defaut largeur et hauteur du contenu</li>
+				<li>impossible de mettre du height et du width en css</li>
+				<li>margin uniquement en left et right </li>
+				<li>padding uniquement en left et right (top et bottom fonctionnent mais provoquent un debordement sur les elements qui l'entourent)</li>
+				<li>par defaut se positionnent l'un à côté de l'autre dans le flux</li>
+			</ol>
+		</main>
+		<!-- /main -->
+
+		<!-- footer -->
+		<footer>
+			footer
+		</footer>
+		<!-- /footer -->
+	</body>
+</html>

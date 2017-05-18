@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+}
+
+.container div {
+	width: 100px;
+	height: 100px;
+}
+
+.container {
+	width: 250px;
+	background: #000;
+}
+
+.top-left {
+	background: red;
+}
+
+.top-right {
+	background: blue;
+	position: relative;
+	top: -100px;
+	left: 100px;
+}
+
+.bottom-left {
+	background: yellow;
+	position: relative;
+	top: -100px;
+}
+
+.bottom-right {
+	background: green;
+	position: relative;
+	top: -200px;
+	left: 100px;
+}
+
+.center {
+	background: violet;
+	position: relative;
+	top: -350px;
+	left: 50px;
+}

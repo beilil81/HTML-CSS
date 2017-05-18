@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>les float</title>
+		<meta name="description" content="description unique par page">
+		<link rel="stylesheet" href="./css/normalize.css">
+		<link rel="stylesheet" href="./icomoon/style.css">
+		<link rel="stylesheet" href="./css/17.css">
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			
+		</header>
+		<!-- /header -->
+
+		<!-- main -->
+		<main>
+			<div class="container">
+				<div class="top-left">top left</div>
+				<div class="top-right">top right</div>
+				<div class="bottom-left">bottom left</div>
+				<div class="bottom-right">bottom right</div>
+				<div class="center">center</div>
+				<div class="clearfix">clearfix</div>
+			</div>
+
+			<h1>les floats</h1>
+			<ul>
+				<li>sort du flux de positionnement normal mais reste dépendant du parent</li>
+				<li>le parent ne le considère plus dans le calcul de sa hauteur (comportement par defaut des block et inline qui prennent la hauteur de leur contenus dans le flux)</li>
+				<li>en float left, positionne sont bord left sur le float qui le précède tant qu'il y a de la place. si aucun float avant, met son bord left sur le bord left du parent</li>
+				<li>en float, comme le block sort du flux, il ne prend plus la largeur du parent mais celle de son contenu</li>
+				<li>supprime fusion des marge entre parent et enfants</li>
+				<li>le margin auto sur un float ne fonctionne plus car il sort du flux</li>
+				<li>un float prend la hauteur de ses enfants floatants</li>
+
+			</ul>
+		</main>
+		<!-- /main -->
+
+		<!-- footer -->
+		<footer>
+			
+		</footer>
+		<!-- /footer -->
+	</body>
+</html>

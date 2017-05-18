@@ -1,0 +1,83 @@
+* {
+	box-sizing: border-box;
+}
+
+/*selecteur simple*/
+p {
+	background: red !important;
+}
+
+p {
+	background: blue;
+}
+
+/*selecteur de class*/
+.green {
+	background: green;
+}
+
+p {
+	background: blue;
+}
+
+/*selecteur d'id*/
+#yellow {
+	background: yellow;
+}
+
+/*pseudo selecteurs*/
+p:nth-child(2) {
+	background: orange;
+}
+
+.green {
+	background: green;
+}
+
+/*selecteur d'attribut */
+[alt] {
+	/*cible tous les elements du dom qui ont l'attribut alt*/
+	border: 2px solid red;
+}
+
+/*selecteur d'attribut*/
+[class] {
+	/*cible tous les elements du dom qui ont un attribut class*/
+}
+
+[class="green"] {
+	/*cible tous les elements du dom qui ont un attribut class = green*/
+	background: purple;
+}
+
+.green {
+	background: green;
+}
+
+
+[class="green"] {
+	/*cible tous les elements du dom qui ont un attribut class = green*/
+	background: purple;
+}
+
+[class*="gre"] {
+	/*cible tous les elements du dom qui ont un attribut class = une chaine qui contient gre */
+}
+
+[id="yellow"] {
+	/*cible tous les elements du dom qui ont l'attribut id = yellow*/
+	background: brown;
+}
+
+/*selecteur combinatoires (adjascence)*/
+.container p {
+	/*cible tous les p descendant d'un element qui à la class = container*/
+}
+
+.container>p {
+	/*cible tous les p enfants directs d'un element qui à la class = container*/
+}
+
+.container+p {
+	/*cible le p frère suivant d'un element qui à la class = container*/
+}

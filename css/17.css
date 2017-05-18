@@ -1,0 +1,65 @@
+* {
+	box-sizing: border-box;
+}
+
+.container div {
+	width: 100px;
+	height: 100px;
+}
+
+.container {
+	width: 250px;
+	background: #000;
+	margin: auto;
+	/*float: left;*/
+	overflow: hidden;
+
+}
+
+.top-left {
+	background: red;
+	float: left;
+}
+
+.top-right {
+	background: blue;
+	float: left;
+	
+}
+
+.bottom-left {
+	background: yellow;
+	float: left;
+
+}
+
+.bottom-right {
+	background: green;
+	float: left;
+	
+	
+}
+
+.center {
+	background: violet;
+	float: left;
+	
+}
+
+h1 {
+	background: purple;
+}
+
+ul {
+	background: gray;
+}
+
+div.clearfix {
+	width: auto;
+	height: auto;
+	background: orange;
+	opacity: 1;
+	min-height: 20px;
+	float: left;
+	width: 100%;
+}

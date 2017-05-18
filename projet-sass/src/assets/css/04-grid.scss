@@ -1,0 +1,111 @@
+@function columns($columns, $container-columns: $maximum-columns) {
+	$column-width: 100% / $container-columns;
+	$width: $columns * $column-width;
+	@return $width;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.container-fluid {
+	width: $wrapper-width;
+}
+
+.container {
+	max-width: $container-width;
+	margin: auto;
+	padding-left: $gutter-width;
+	padding-right: $gutter-width;
+}
+
+.row:before,
+.row:after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
+.row {
+	margin-left: -$gutter-width;
+	margin-right: -$gutter-width;
+}
+
+img {
+	width: 100%;
+	vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+	margin-top: 0;
+}
+
+a {
+	outline: 0;
+}
+
+/*====== grille mobile first ==============*/
+[class*="col-xs"] {
+	float: left;
+	position: relative;
+	padding-left: $gutter-width;
+	padding-right: $gutter-width;
+}
+
+@for $i from 1 through $maximum-columns {
+	.col-xs-#{$i}
+	{
+		width: columns($i);
+	}
+}
+
+
+/*===========================
+	tous les ecrans > 768
+	à partir des tablettes 
+============================*/
+@media all and (min-width: $sm-screen) {
+	@for $i from 1 through $maximum-columns {
+		.col-sm-#{$i}
+		{
+			width: columns($i);
+		}
+	}
+}
+
+/*=============================================
+	tous les ecrans > 992
+	à partir des nodebook 
+=============================================*/
+@media all and (min-width: $md-screen) {
+	@for $i from 1 through $maximum-columns {
+		.col-md-#{$i}
+		{
+			width: columns($i);
+		}
+	}
+}
+
+/*=========================================
+	tous les ecrans > 1200
+	laptop, grand nodebook, larges screens
+=========================================*/
+@media all and (min-width: $lg-screen) {
+	@for $i from 1 through $maximum-columns {
+		.col-lg-#{$i}
+		{
+			width: columns($i);
+		}
+	}
+}
+
+
+
+

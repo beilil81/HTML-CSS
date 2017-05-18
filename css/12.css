@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+}
+
+.container div {
+	width: 100px;
+	height: 100px;
+}
+
+.container {
+	width: 250px;
+	background: #000;
+	margin: auto;
+	position: relative; /*uniquement pour pouvoir positionner 
+	les elements descendants en absolute par rapport à ce container */
+}
+
+.top-left {
+	background: red;
+}
+
+.top-right {
+	background: blue;
+	position: absolute;
+	top: 0;
+	left: 100px;
+}
+
+.bottom-left {
+	background: yellow;
+	
+}
+
+.bottom-right {
+	background: green;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	
+}
+
+.center {
+	background: violet;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}

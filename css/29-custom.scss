@@ -1,0 +1,223 @@
+
+/*--------colors and backgrounds -----------------*/
+body>header a,
+.bandeau h1,
+.bandeau h2,
+.accroche a,
+body>footer a {
+	color: $primary-color;
+}
+
+nav a:hover,
+.active a {
+	transition: all .5s;
+	color: #0198A0;
+}
+
+.content p {
+	color: #161616;
+}
+
+.content h1 {
+	color: lighten($secondary-color,10%);
+}
+
+.accroche h3 {
+	color: #FB9CC4;
+}
+
+body>header,
+.accroche h3,
+body>footer {
+	background: #161616;
+}
+
+.bandeau {
+background: rgb(1,152,160); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(1,152,160,1) 0%, rgba(1,88,132,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(1,152,160,1) 0%,rgba(1,88,132,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(1,152,160,1) 0%,rgba(1,88,132,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0198a0', endColorstr='#015884',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.accroche a {
+	background: #CC0A5C;
+}
+
+/*------------ typos and font-size ----------------------*/
+
+h1,
+h2,
+h3,
+p,
+ul {
+	margin-top: 0;
+}
+
+h1 {
+	font-size: 1.3333rem;
+}
+
+.accroche h3,
+.accroche a {
+	font-size: 1.3rem;
+}
+
+p,a {
+	font-size: 1rem;
+}
+
+.bandeau h1 {
+	font-size: 3rem;
+}
+
+.bandeau h2 {
+	font-size: 2rem;
+}
+
+
+
+/*------------ sections layout ----------------------*/
+
+html {
+	font-size: 14px;
+}
+
+section {
+	padding: 2rem 0 1rem 0;
+}
+
+.bandeau {
+	margin-left: -15px;
+	margin-right: -15px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.gallery figure {
+	padding: 0;
+}
+
+/*-----------header--------------*/
+
+header {
+	min-height: 55px;
+}
+nav ul {
+	padding-left: 0
+}
+
+nav li {
+	list-style: none;
+}
+
+nav a {
+	display: block;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+
+
+.icon-navicon {
+	color: #fff;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	font-size: 1.8rem;
+}
+
+nav {
+	display: none;
+}
+
+.accroche h3,
+.accroche a {
+	font-weight: bold;
+	margin: 0;
+	display: block;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.accroche a {
+	text-decoration: none;
+	text-align: center;
+}
+
+/*-----------main--------------*/
+
+/*-----------footer--------------*/
+
+body>footer {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+body>footer ul {
+	padding-left: 0;
+	margin: 0;
+}
+
+body>footer li {
+	list-style: none;
+}
+
+/*===========================
+	tous les ecrans > 768
+	à partir des tablettes 
+============================*/
+@media all and (min-width: 768px) {
+
+	/*----layout-------*/
+	html {
+		font-size: 15px;
+	}
+
+}
+
+/*=============================================
+	tous les ecrans > 992
+	à partir des nodebook 
+=============================================*/
+@media all and (min-width: 992px) {
+	/*----layout-------*/
+	html {
+		font-size: 16px;
+	}
+
+	/*----- header -------*/
+	nav {
+		display: block;
+	}
+
+	.icon-navicon {
+		display: none;
+	}
+
+	nav ul {
+		margin: 0;
+	}
+
+	nav li {
+		display: inline-block;
+		padding-right: 2rem;
+	}
+
+	body>header {
+		padding-top: 1rem;
+	}
+}
+
+
+/*=========================================
+	tous les ecrans > 1200
+	laptop, grand nodebook, larges screens
+=========================================*/
+@media all and (min-width: 1200px) {
+	/*----layout-------*/
+	html {
+		font-size: 18px;
+	}
+
+}

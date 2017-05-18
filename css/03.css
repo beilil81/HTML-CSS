@@ -1,0 +1,11 @@
+/*selecteur css*/
+div {
+	/*propriété css : sa valeur;*/
+	background: #A2389C;
+	width: 100px;
+	height: 100px;
+	padding: 100px;
+	border: 50px solid black;
+	margin: 100px;
+	
+}

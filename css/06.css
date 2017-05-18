@@ -1,0 +1,29 @@
+* {
+	box-sizing: border-box;
+}
+
+header {
+	border: 1px solid brown;
+	background: brown;
+}
+
+nav {
+	background: red;
+	margin: 50px 0;
+}
+
+ul {
+	background: green;
+}
+
+li {
+	background: yellow;
+}
+
+a {
+	background: blue;
+}
+
+main {
+	background: violet;
+}

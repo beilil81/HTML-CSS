@@ -1,0 +1,33 @@
+à partir de lundi : 
+
+- position relative
+- position absolute
+- position fixed
+- Police d'icons 
+
+- tp inline-bloc et positions (galerie)
+- tp exercice inline-bloc et positions (boite d'alerte)
+
+- police de caractère
+- float 
+- clear: both
+
+- tp float (mise en page avec row et cols)
+- tp exercice (reprendre tp inline-bloc galerie mais passer en float les block)
+
+- poids des selecteurs 
+
+- systeme de grille
+- responsive et mobile first 
+- media queries 
+- methodologie de conception avec prototypage (mockup)
+- bonnes pratiques (gabarits de page, prototypes, guide de style, utilisation des selecteurs légers et adjascents)
+
+- tp page web
+- tp exercice page web (exo à partir d'un webdesign, en appliquant prototypage et bonnes pratiques)
+
+- gulp ou grunt
+- sass 
+- bonnes pratiques ré utilisation du code, maintenance, rapidité, astuces
+
+

@@ -1,0 +1,85 @@
+* {
+	box-sizing: border-box;
+}
+
+/*exemple rwd*/
+
+[class*="col-lg-"] {
+	float: left;
+	padding: 3rem;
+	border: 1px solid black;
+	background: red;
+	width: 33.33333%;
+}
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+}
+
+.container p {
+	color: white;
+	text-align: center;
+	font-size: 3rem;
+}
+
+.col-lg-4 {
+	width: 33.3333%;
+}
+
+/*===========================
+	tous les ecrans < 1200
+	laptop et notepas 
+============================*/
+@media all and (max-width: 1200px) {
+	[class*="col-lg-"] {
+		background: orange;
+	}
+	.col-md-6 {
+		width: calc(100% / 12 * 6);
+	}
+}
+
+/*===========================
+	tous les ecrans < 992
+	tablettes 
+============================*/
+@media all and (max-width: 992px) {
+	[class*="col-lg-"] {
+		background: yellow;
+	}
+	.col-sm-8 {
+		width: calc(100% / 12 * 8);
+	}
+}
+
+/*===========================
+	tous les ecrans < 768
+	smartphones et mini tabs
+============================*/
+@media all and (max-width: 768px) {
+	[class*="col-lg-"] {
+		background: green;
+	}
+	.col-xs-12 {
+		width: calc(100% / 12 * 12);
+	}
+}
+
+/*exemples de media queries */
+@media all and (max-width: 768px) and (orientation: landscape) {
+	/*ici on cible les smartphones et mini tablettes en mode horizontale*/
+}
+
+@media all and (max-width: 768px) and (orientation: landscape) and (pixel-ratio: 1.5) {
+	/*ici on cible les smartphones et mini tablettes en mode horizontale avec un pixel ratio d'au moins 1.5 */
+}
+
+@media all and (max-width: 768px) and (min-width: 400px) and (orientation: landscape) {
+	/*ici on cible les  mini tablettes avec ecran compris entre 400px et 768px uniquement*/
+}
+
+
+
+
+
